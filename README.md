@@ -75,5 +75,22 @@
 
 - Stretch Goal: Testing, TravisCI 
 
+**USER STORIES**
 
+- As a user I would like to know how to play the game when I log in.
 
+- As a user I would like to be able to type in a command, listed in the “how to play” message, to see a list of all game commands.
+
+- As a user I would like to enter a command to see my game stats.
+
+- As a user I would like to enter a command to see a leaderboard of the top 10 players.
+
+- As a user, if i am required to use my email to log in, I would like to create a username that is not my email log in.
+
+- As a user I would like to know when a game will start i.e. “waiting for 2nd player to join”
+
+- Stretch goals:
+
+- As a user I would like to connect to a home room when I log in where I can choose to join next available game or create a private room to play against a friend.
+
+- As a user I would like a chat function with other connected players.
