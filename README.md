@@ -11,7 +11,7 @@
 
 The purpose of this project is to illistrate our cumulative knowledge of backend web development through the example of a game, consisting of a custom built API, a client server and a game made with socket.io.  
 
-## Playing the Game
+## Playing the Game 
 
 In order to play Word Wizard, users will need to fork the client repo and clone it down to their machine. They can use [this](https://github.com/EnSeven/client) link to access the repository. 
 
