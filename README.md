@@ -5,7 +5,7 @@
 # Word Wizard **![](https://lh6.googleusercontent.com/GgT9N45K9nwbHLxGFM2Zs5zd6ui34N5TnD7-gZak-WfQWNrKM0iebbTErikHvMiTXm1bLpR8Bv_Q5uLbiEe-WcAuxhaxuQtyRLQJduhyhUEVLvOuoIodXlXpLQkv-LSnFRu_o2P0fVM)**
   ##### an **EnSeven** production
 
-*EnSeven is a student organization*
+##### *EnSeven is a student organization*
 
   
 
@@ -60,7 +60,7 @@ The API is a database for storing users information and is protected from client
 
   
 ## Code Samples
-  # Client Server example code *user connected*
+  ### Client Server example code {*user connected*}
   ```
  socket.on('start', (payload) => {
     console.log('payload', payload);
@@ -68,14 +68,14 @@ The API is a database for storing users information and is protected from client
     console.log(`Player ${socket.id} has joined the game`);
   });
   ```
-# Socket.io example code *user disconnected*
+### Socket.io example code {*user disconnected*}
 ```
   socket.on('disconnect', () => {
     socket.removeAllListeners();
     console.log(`Player ID ${socket.id} has left the game`);
   });
   ```
-  # API example code *user signs in*
+  ### API example code {*user signs in*}
   ```
   authRouter.post('/signin', auth(), (req, res, next) => {
   res.cookie('auth', req.token);
