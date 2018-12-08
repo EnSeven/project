@@ -99,9 +99,15 @@ The API server provides the interface to the persistence layer, which is impleme
 [Readline Documentation](https://nodejs.org/api/readline.html)
 [![npm version](https://badge.fury.io/js/readline.svg)](https://badge.fury.io/js/readline)
   
-  [Socket.IO Documentation](https://socket.io/docs/)
+[Socket.IO Documentation](https://socket.io/docs/)
   [![npm version](https://badge.fury.io/js/socket.io.svg)](https://badge.fury.io/js/socket.io)
 
-  ## Additional thank-yous and mentions
-  Word Wizard was inspired by [a command line hangman game](https://github.com/adnanyousef/word-guess-cli)
+  ## Additional mentions
+  ### Our Wonderful TA team
+ Cara Ottomar - [LinkedIn](https://www.linkedin.com/in/cara-ottmar/)
 
+ Ed Abrahamsen - [LinkedIn](https://www.linkedin.com/in/ed-abrahamsen/)
+
+### Other
+  
+  Word Wizard was inspired by [a command line hangman game](https://github.com/adnanyousef/word-guess-cli)
