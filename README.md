@@ -59,9 +59,29 @@ Game-Engine is a Socket.IO server that connects to both Client server and the AP
 The API is a database for storing users information and is protected from client access. The API stores individual game results and keeps tracks of player statistics including wins/losses.
 
   
-  
-  ## Code
-  
+## Code Samples
+  # Client Server example code *user connected*
+  ```
+ socket.on('start', (payload) => {
+    console.log('payload', payload);
+    socket.emit('connected', `Player ${socket.id} ready`);
+    console.log(`Player ${socket.id} has joined the game`);
+  });
+  ```
+# Socket.io example code *user disconnected*
+```
+  socket.on('disconnect', () => {
+    socket.removeAllListeners();
+    console.log(`Player ID ${socket.id} has left the game`);
+  });
+  ```
+  # API example code *user signs in*
+  ```
+  authRouter.post('/signin', auth(), (req, res, next) => {
+  res.cookie('auth', req.token);
+  res.send(req.token);
+});
+  ```
   
 
 ## Citations
