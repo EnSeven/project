@@ -3,7 +3,7 @@
 
 
 # Word Wizard **![](https://lh6.googleusercontent.com/GgT9N45K9nwbHLxGFM2Zs5zd6ui34N5TnD7-gZak-WfQWNrKM0iebbTErikHvMiTXm1bLpR8Bv_Q5uLbiEe-WcAuxhaxuQtyRLQJduhyhUEVLvOuoIodXlXpLQkv-LSnFRu_o2P0fVM)**
-  ### an **EnSeven** production
+  ##### an **EnSeven** production
 
 *EnSeven is a student organization*
 
@@ -38,13 +38,13 @@ In order to play Word Wizard, users will need to fork the client repo and clone 
 
   
 
-2. In order to start a game, a player will need to type `nodemon` OR `node client.js` into terminal. Users will then be connected to the game server and will be prompted to either CREATE an account or LOGIN to an existing account.
+2. In order to start a game, a player will need to type `nodemon` OR `node client.js` into terminal. Users will then be connected to the game server and will be prompted to either **CREATE** an account or **LOGIN** to an existing account.
 
   
 
 ## Functionality between Client and Game-Engine
 
-The client.js file is a Socket.IO server that connects to the game server's [Heroku link](https://enseven-game-engine.herokuapp.com). Upon starting up the client in the terminal (nodemon OR node client.js), a user will be connected to the game server and prompted to either CREATE a new account or LOGIN to an existing account. These prompts are initiated by both Readline and the npm package Prompt, which, based on a schema, prompt the user for their email (must be unique), username (must be unique), and password. See documentation links in Citations section below.
+The client.js file is a Socket.IO server that connects to the game server's [Heroku link](https://enseven-game-engine.herokuapp.com). Upon starting up the client in the terminal (`nodemon` OR `node client.js`), a user will be connected to the game server and prompted to either CREATE a new account or LOGIN to an existing account. These prompts are initiated by both Readline and the npm package Prompt, which, based on a schema, prompt the user for their email (must be unique), username (must be unique), and password. See documentation links in Citations section below.
   
 Once a token is sent back from the API to the game server, the game server notifies the client server. Upon receipt of notification the user is signed in and able to request to join the game. Once two players join the game, they begin playing, alternating turns guessing letters until they either run out of turns or guess the correct word. They are alerted if they won the game or lost the game and their stats are stored for future use.
 
@@ -59,9 +59,29 @@ Game-Engine is a Socket.IO server that connects to both Client server and the AP
 The API is a database for storing users information and is protected from client access. The API stores individual game results and keeps tracks of player statistics including wins/losses.
 
   
-  
-  ## Code
-  
+## Code Samples
+  # Client Server example code *user connected*
+  ```
+ socket.on('start', (payload) => {
+    console.log('payload', payload);
+    socket.emit('connected', `Player ${socket.id} ready`);
+    console.log(`Player ${socket.id} has joined the game`);
+  });
+  ```
+# Socket.io example code *user disconnected*
+```
+  socket.on('disconnect', () => {
+    socket.removeAllListeners();
+    console.log(`Player ID ${socket.id} has left the game`);
+  });
+  ```
+  # API example code *user signs in*
+  ```
+  authRouter.post('/signin', auth(), (req, res, next) => {
+  res.cookie('auth', req.token);
+  res.send(req.token);
+});
+  ```
   
 
 ## Citations
