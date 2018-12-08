@@ -21,7 +21,7 @@
 
   
 
-The purpose of this project is to illistrate our cumulative knowledge of backend web development through the example of a game, consisting of a custom built API, a client server and a game made with socket.io.
+The purpose of this project is to illustrate our cumulative knowledge of backend web development through the example of a game, consisting of a custom built API, a client server and a game made with socket.io.
 
   
 
@@ -51,12 +51,13 @@ Once a token is sent back from the API to the game server, the game server notif
   
 
 ## Functionality between Game-Engine and API
-Game-Engine is a Socket.IO server that connects to both Client server and the API. Once a user has selected to either create or login as an exsisiting user, Game-Engine sends the user data; username, password, and email to the API. The API sends back a token using JWOT. The token is an authenticator for data transfers between Game-Engine and API.
+Game-Engine is a Socket.IO server that connects to both Client server and the API. Once a user has selected to either create or login as an existing user, Game-Engine sends the user data; username, password, and email to the API. The API sends back a token using JWOT. The token is an authenticator for data transfers between Game-Engine and API.
 
   
 
 ## API functionality
-The API server provides the interface to the persistence layer, which is implemented using MongoDb. When users sign up, or return to play again, the API is accessed. The game engine uses API services to persist and retrieve information about wins and losses.
+The API server provides the interface to the persistence layer, which is implemented using MongoDb. When users sign up, or return to play again, the API is accessed. The game engine uses API services to persist and retrieve information about wins and losses. For further documentation on the API please see [additional documentation](https://github.com/EnSeven/project/blob/master/additional%20documentation.md)
+
 
   
 ## Code Samples
@@ -100,3 +101,7 @@ The API server provides the interface to the persistence layer, which is impleme
   
   [Socket.IO Documentation](https://socket.io/docs/)
   [![npm version](https://badge.fury.io/js/socket.io.svg)](https://badge.fury.io/js/socket.io)
+
+  ## Additional thank-yous and mentions
+  Word Wizard was inspired by [a command line hangman game](https://github.com/adnanyousef/word-guess-cli)
+
