@@ -46,7 +46,7 @@ In order to play Word Wizard, users will need to fork the client repo and clone 
 
 The client.js file is a Socket.IO server that connects to the game server's [Heroku link](https://enseven-game-engine.herokuapp.com). Upon starting up the client in the terminal (`nodemon` OR `node client.js`), a user will be connected to the game server and prompted to either CREATE a new account or LOGIN to an existing account. These prompts are initiated by both Readline and the npm package Prompt, which, based on a schema, prompt the user for their email (must be unique), username (must be unique), and password. See documentation links in Citations section below.
   
-Once a token is sent back from the API to the game server, the game server notifies the client server. Upon receipt of notification the user is signed in and able to request to join the game. Once two players join the game, they begin playing, alternating turns guessing letters until they either run out of turns or guess the correct word. They are alerted if they won the game or lost the game and their stats are stored for future use.
+Once a token is sent back from the API to the game server, the game server notifies the client server. Upon receipt of notification the user is signed in and able to request to join the game. 
 
   
 
