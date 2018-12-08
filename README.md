@@ -56,7 +56,7 @@ Game-Engine is a Socket.IO server that connects to both Client server and the AP
   
 
 ## API functionality
-The API is a database for storing users information and is protected from client access. The API stores individual game results and keeps tracks of player statistics including wins/losses.
+The API server provides the interface to the persistence layer, which is implemented using MongoDb. When users sign up, or return to play again, the API is accessed. The game engine uses API services to persist and retrieve information about wins and losses.
 
   
 ## Code Samples
