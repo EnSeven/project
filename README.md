@@ -1,9 +1,6 @@
+# Word Wizard
 
-
-
-
-# Word Wizard **![](https://lh6.googleusercontent.com/GgT9N45K9nwbHLxGFM2Zs5zd6ui34N5TnD7-gZak-WfQWNrKM0iebbTErikHvMiTXm1bLpR8Bv_Q5uLbiEe-WcAuxhaxuQtyRLQJduhyhUEVLvOuoIodXlXpLQkv-LSnFRu_o2P0fVM)**
-  ##### an **EnSeven** production
+##### an **EnSeven** production
 
 ##### *EnSeven is a student organization*
 
